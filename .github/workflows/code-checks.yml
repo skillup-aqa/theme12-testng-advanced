@@ -25,3 +25,6 @@ jobs:
 
       - name: Test with Gradle Wrapper
         run: ./gradlew test
+
+      - name: Run Coverage
+        run: ./gradlew jacocoTestCoverageVerification
