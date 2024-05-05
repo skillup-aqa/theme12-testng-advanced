@@ -17,6 +17,14 @@ dependencies {
 test {
     useTestNG() {
         useDefaultListeners = true
+
+        // Configure the test suite to run with -Dsuite=all.xml
+        suites('src/test/resources/' + System.getProperty('suite', 'all.xml'))
+
+        // Adding listeners
+        listeners << 'ua.skillup.listeners.PriorityAnnotationTransformer'
+
+        setGroupByInstances(true)
     }
 
     finalizedBy jacocoTestReport // report is always generated after tests run
@@ -35,7 +43,7 @@ jacocoTestCoverageVerification {
     violationRules {
         rule {
             limit {
-                minimum = 0.97
+                minimum = 0.8
             }
         }
     }

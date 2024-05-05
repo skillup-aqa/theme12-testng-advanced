@@ -2,7 +2,7 @@ package ua.skillup.part2;
 
 public class AgeOnPlanetCalculator {
     public static double calculateAgeOnPlanet(int ageInYears, String planet) {
-        if(ageInYears < 0) {
+        if (ageInYears < 0) {
             throw new IllegalArgumentException("Age cannot be negative");
         }
 

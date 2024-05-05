@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--Setting parallel to none because tests are sharing the same array-->
+<suite name="Run all tests">
+    <test name="All tests">
+        <packages>
+            <package name="ua.skillup.tests.part4.*"/>
+        </packages>
+    </test>
+</suite>

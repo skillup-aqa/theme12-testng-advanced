@@ -2,7 +2,7 @@ package ua.skillup.part2;
 
 public class PointsToMarksConvertor {
     public static char convertPointsToMarks(int points) {
-        if(points < 0 || points > 100) {
+        if (points < 0 || points > 100) {
             throw new IllegalArgumentException("Points should be in range 0-100");
         }
 

@@ -65,7 +65,7 @@ public class MathCalculator {
     }
 
     public static void printFibonacciNumbers(int n) {
-        if(n < 2) {
+        if (n < 2) {
             throw new IllegalArgumentException("Input number should be greater than 1");
         }
 

@@ -2,7 +2,7 @@ package ua.skillup.part3;
 
 public class CollatzConjectureTester {
     public static int collatzConjecture(int n) {
-        if(n <= 0) {
+        if (n <= 0) {
             throw new IllegalArgumentException("Input number should be greater than 0");
         }
 

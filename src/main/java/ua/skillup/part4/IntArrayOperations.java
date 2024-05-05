@@ -62,9 +62,7 @@ public class IntArrayOperations {
 
     public static int[] copy(int[] array) {
         int[] copied = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
-            copied[i] = array[i];
-        }
+        System.arraycopy(array, 0, copied, 0, array.length);
         return copied;
     }
 
@@ -86,9 +84,7 @@ public class IntArrayOperations {
             }
         }
         int[] result = new int[index];
-        for (int i = 0; i < index; i++) {
-            result[i] = unique[i];
-        }
+        System.arraycopy(unique, 0, result, 0, index);
         return result;
 
     }
@@ -109,12 +105,8 @@ public class IntArrayOperations {
 
     public static int[] merge(int[] array1, int[] array2) {
         int[] merged = new int[array1.length + array2.length];
-        for (int i = 0; i < array1.length; i++) {
-            merged[i] = array1[i];
-        }
-        for (int i = 0; i < array2.length; i++) {
-            merged[array1.length + i] = array2[i];
-        }
+        System.arraycopy(array1, 0, merged, 0, array1.length);
+        System.arraycopy(array2, 0, merged, array1.length, array2.length);
         return merged;
     }
 
