@@ -6,7 +6,7 @@ public class AgeOnPlanetCalculator {
             throw new IllegalArgumentException("Age cannot be negative");
         }
 
-        return 1/*switch (planet) {
+        return switch (planet) {
             case "Mercury" -> ageInYears / 0.2408467;
             case "Venus" -> ageInYears / 0.61519726;
             case "Mars" -> ageInYears / 1.8808158;
@@ -15,6 +15,6 @@ public class AgeOnPlanetCalculator {
             case "Uranus" -> ageInYears / 84.016846;
             case "Neptune" -> ageInYears / 164.79132;
             default -> throw new IllegalArgumentException("Unknown planet: " + planet);
-        }*/;
+        };
     }
 }
