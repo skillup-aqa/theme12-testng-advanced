@@ -8,6 +8,7 @@ import static org.testng.Assert.assertEquals;
 public class ArithmeticMeanCalculatorTest {
 
     private static int i = 1;
+
     @BeforeClass
     public void startTest() {
         System.out.println("Start ArithmeticMeanCalculatorTest");
