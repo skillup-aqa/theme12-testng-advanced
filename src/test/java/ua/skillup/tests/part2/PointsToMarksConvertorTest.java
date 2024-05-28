@@ -32,6 +32,7 @@ public class PointsToMarksConvertorTest {
         assertThrows(IllegalArgumentException.class, () -> PointsToMarksConvertor.convertPointsToMarks(points));
     }
 
+    @Test
     public void pointsToMarkConvertorMoreThanHundred() {
         int points = 105;
         assertThrows(IllegalArgumentException.class, () -> PointsToMarksConvertor.convertPointsToMarks(points));
