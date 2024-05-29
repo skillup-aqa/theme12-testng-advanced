@@ -17,4 +17,11 @@ public class AgeOnPlanetCalculator {
             default -> throw new IllegalArgumentException("Unknown planet: " + planet);
         };
     }
+
+    public static void main(String[] args) {
+        int ageInYears = 1;
+        String planet = "Mars";
+        double result = calculateAgeOnPlanet(ageInYears, planet);
+        System.out.println(result);
+    }
 }
