@@ -17,6 +17,7 @@ dependencies {
 test {
     useTestNG() {
         useDefaultListeners = true
+        suites 'src/test/resources/all.xml'
     }
 
     finalizedBy jacocoTestReport // report is always generated after tests run
