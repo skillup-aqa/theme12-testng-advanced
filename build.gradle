@@ -16,8 +16,10 @@ dependencies {
 
 test {
     useTestNG() {
-        useDefaultListeners = true
-        suites 'src/test/resources/all.xml'
+      //  useDefaultListeners = true
+        suites ('src/test/resources/' + System.getProperty('suite', 'all') + '.xml');
+
+
     }
 
     finalizedBy jacocoTestReport // report is always generated after tests run
