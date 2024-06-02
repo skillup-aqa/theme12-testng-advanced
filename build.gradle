@@ -19,7 +19,7 @@ test {
         useDefaultListeners = true
         suites('src/test/resources/' + System.getProperty('suite', 'all') + '.xml');
 
-        //listeners << 'ua.skillup.listeners.PriorityAnnotationTransformer'
+        listeners << 'ua.skillup.listeners.PriorityAnnotationTransformer'
 
     }
 

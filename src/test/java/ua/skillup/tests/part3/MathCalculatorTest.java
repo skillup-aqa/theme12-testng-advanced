@@ -63,7 +63,7 @@ public class MathCalculatorTest {
     }
 
 
-    @Test(retryAnalyzer = ua.skillup.listemers.RetryAnalyzer.class)
+    @Test//(retryAnalyzer = ua.skillup.listeners.RetryAnalyzer.class)
     public void isArmstrongNumberFalse() throws InterruptedException {
         //Thread.sleep(1000);
 

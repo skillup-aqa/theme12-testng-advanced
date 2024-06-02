@@ -1,4 +1,4 @@
-package ua.skillup.listemers;
+package ua.skillup.listeners;
 
 import org.testng.IAnnotationTransformer;
 import org.testng.annotations.ITestAnnotation;
