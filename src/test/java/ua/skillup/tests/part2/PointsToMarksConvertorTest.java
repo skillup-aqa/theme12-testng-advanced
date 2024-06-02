@@ -26,5 +26,9 @@ public class PointsToMarksConvertorTest {
         int points = -1;
         assertThrows(IllegalArgumentException.class, () -> PointsToMarksConvertor.convertPointsToMarks(points));
     }
-
+    @Test
+    public void MarksCalculatorMoreThen100Test(){
+        int points = 101;
+        assertThrows(IllegalArgumentException.class, () -> PointsToMarksConvertor.convertPointsToMarks(points));
+    }
 }
