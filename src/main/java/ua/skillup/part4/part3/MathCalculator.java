@@ -1,4 +1,4 @@
-package ua.skillup.part3;
+package ua.skillup.part4.part3;
 
 public class MathCalculator {
     private static void checkIsPositive(int n) {
