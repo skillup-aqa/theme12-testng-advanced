@@ -9,16 +9,18 @@ import static org.testng.Assert.assertThrows;
 public class CollatzConjectureTesterTest {
 
     @Test
-    public void testCollatzConjecturePositive() {
+    public void testCollatzConjecturePositive() throws InterruptedException {
         int number = 6;
         int expected = 8;
+        Thread.sleep(1000);
         int actualSteps = CollatzConjectureTester.collatzConjecture(number);
         assertEquals(actualSteps, expected);
     }
 
     @Test
-    public void CollatzConjectureTesterNegative() {
+    public void CollatzConjectureTesterNegative() throws InterruptedException {
         int number = -5;
+        Thread.sleep(1000);
         assertThrows(IllegalArgumentException.class, () -> CollatzConjectureTester.collatzConjecture(number));
     }
 

@@ -10,7 +10,7 @@ import static org.testng.Assert.assertThrows;
 
 public class AgeOnPlanetCalculatorTest {
 
-    @DataProvider(name = "ageForPlanets")
+    @DataProvider(name = "ageForPlanets", parallel = true)
     public Object[][] ageForPlanets() {
         return new Object[][]{
                 {1, "Mercury", 4.15201869072733817818554292004},
@@ -24,8 +24,9 @@ public class AgeOnPlanetCalculatorTest {
     }
 
     @Test(dataProvider = "ageForPlanets")
-    public void testCalculateAgeOnPlanetPositive(int age, String planet, double expected) {
+    public void testCalculateAgeOnPlanetPositive(int age, String planet, double expected) throws InterruptedException {
         double result = AgeOnPlanetCalculator.calculateAgeOnPlanet(age, planet);
+        //Thread.sleep(1000);
         assertEquals(result, expected);
     }
 
