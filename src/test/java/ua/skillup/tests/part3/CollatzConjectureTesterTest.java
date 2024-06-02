@@ -12,7 +12,7 @@ public class CollatzConjectureTesterTest {
     public void testCollatzConjecturePositive() throws InterruptedException {
         int number = 6;
         int expected = 8;
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         int actualSteps = CollatzConjectureTester.collatzConjecture(number);
         assertEquals(actualSteps, expected);
     }
@@ -20,7 +20,7 @@ public class CollatzConjectureTesterTest {
     @Test
     public void CollatzConjectureTesterNegative() throws InterruptedException {
         int number = -5;
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         assertThrows(IllegalArgumentException.class, () -> CollatzConjectureTester.collatzConjecture(number));
     }
 

@@ -18,9 +18,8 @@ test {
     useTestNG() {
         useDefaultListeners = true
         suites('src/test/resources/' + System.getProperty('suite', 'all') + '.xml');
-       // suites('src/test/resources/part3.xml');
 
-
+        //listeners << 'ua.skillup.listeners.PriorityAnnotationTransformer'
 
     }
 
